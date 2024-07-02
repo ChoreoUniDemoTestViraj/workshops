@@ -23,7 +23,7 @@ export default function App() {
     name: "",
     mobileNumber: "",
   });
-  const [isAuthLoading, setIsAuthLoading] = useState(true);
+  const [isAuthLoading, setIsAuthLoading] = useState(false);
 
   useEffect(() => {
     if (signedIn && user.id !== "" && window.location.pathname === "/") {
